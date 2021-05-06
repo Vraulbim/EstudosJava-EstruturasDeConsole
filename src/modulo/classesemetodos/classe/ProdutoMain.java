@@ -14,7 +14,13 @@ public class ProdutoMain {
         produto2.valor = 3.800;
         produto2.oferta = 0.15;
 
-        System.out.println(produto1.nome);
-        System.out.println(produto2.nome);
+        Produto produto3 = new Produto();
+        produto3.nome = "smart Watch";
+        produto3.valor = 190.00;
+        produto3.oferta = 0.5;
+
+        System.out.println(produto1.nome + " R$" + produto1.precoDesconto());
+        System.out.println(produto2.nome + " R$" + produto2.precoDesconto());
+        System.out.println(produto3.nome + " R$" + produto3.precoDesconto(0.6));
     }
 }
